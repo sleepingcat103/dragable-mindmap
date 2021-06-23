@@ -1,0 +1,8 @@
+.pop-menu {
+    position: absolute;
+    border: 1px solid rgb(0,0,0, 20%);
+    border-radius: .3rem;
+    padding: .3rem;
+    background: white;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 20%);
+}

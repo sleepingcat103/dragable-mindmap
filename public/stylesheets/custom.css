@@ -1,0 +1,51 @@
+/* 側開頁面(右) */
+.sidebar-container { transition: all 0.3s; }
+.sidebar-container .sidebar .sidebar-mask { display: none; }
+.sidebar-container .sidebar .sidebar-content {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+  background: rgb(238, 240, 243);
+  transition: all 0.3s;
+  overflow-y: auto;
+}
+.sidebar-container .sidebar .sidebar-content { right: min(-300px, -30vw); width: max(min(100vw, 300px), 30vw);}
+.sidebar-container .sidebar.sidebar-md .sidebar-content { right: min(-400px, -40vw); width: max(min(100vw, 400px), 40vw); }
+.sidebar-container .sidebar.sidebar-lg .sidebar-content { right: min(-600px, -60vw); width: max(min(100vw, 600px), 60vw); }
+.sidebar-container.active .sidebar { right: 0; }
+.sidebar-container.active .sidebar-mask { display: block;z-index: 900; height: 100vh; width: 100vw;  background: #000; opacity: 0.7; position: fixed; top: 0; overflow: hidden; }
+.sidebar-container.active .sidebar .sidebar-content { right: 0 !important; }
+.sidebar-container .sidebar .sidebar-content .sidebar-header,
+.sidebar-container .sidebar .sidebar-content .sidebar-body,
+.sidebar-container .sidebar .sidebar-content .sidebar-footer {
+  padding: 1rem;
+}
+.sidebar-container .sidebar .sidebar-content .sidebar-header {
+  padding-top: 1.5rem;
+}
+.sidebar-container .sidebar .sidebar-content .sidebar-body {
+  background: #fff;
+}
+.dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.opacity-9 { opacity: 0.9; }
+.opacity-8 { opacity: 0.8; }
+.opacity-7 { opacity: 0.7; }
+.opacity-6 { opacity: 0.6; }
+.opacity-5 { opacity: 0.5; }
+.opacity-4 { opacity: 0.4; }
+.opacity-3 { opacity: 0.3; }
+.opacity-2 { opacity: 0.2; }
+.opacity-1 { opacity: 0.1; }
